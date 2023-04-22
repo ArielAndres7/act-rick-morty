@@ -1,0 +1,67 @@
+<!-- <div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center my-3">
+                <div class="card-body">
+                    <h3>LOCATIONS</b></h3>
+                </div>
+            </div>  
+        </div>
+      </div>
+
+      <div class="row">
+        {{#if error}}
+            <p>Error: {{error}}</p>
+        {{/if}}
+
+        {{#each data}}
+            <div class="col-md-3">
+                <div class="card" style="margin: 10px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{name}}</h5>
+                        <p class="card-text">{{type}}</p>
+                        <p class="card-text">{{dimension}}</p>
+                        <a href={{url}} class="btn btn-primary">Go</a>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+
+      </div>
+
+    </div>
+</div> -->
+
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center my-3">
+        <div class="card-body">
+          <h3>LOCATIONS</h3>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+  <div class="row">
+    {{#if error}}
+      <p>Error: {{error}}</p>
+    {{/if}}
+
+    <div class="col-md-12">
+      <ul class="list-group">
+        {{#each data}}
+          <li class="list-group-item">
+            <div>
+              <h5>{{name}}</h5>
+              <p>{{type}}</p>
+              <p>{{dimension}}</p>
+              <a href={{url}} class="btn btn-primary">Go</a>
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+    </div>
+
+  </div>
+</div>
